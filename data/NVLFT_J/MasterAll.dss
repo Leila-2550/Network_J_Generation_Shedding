@@ -1,0 +1,139 @@
+Clear
+
+New Circuit.J  bus1=sourcebus_11000 pu=1.0 basekV=11.0
+
+
+New Linecode.3P_Code4 units=km nphases=3 R1=0.868 R0=1.7941 X1=0.140976620009 X0=0.4602 BaseFreq=50
+New Linecode.3P_OH_Code0 units=km nphases=3 R1=0.37 R0=0.37 X1=0.359733 X0=0.4  BaseFreq=50
+New Linecode.3P_OH_Code1 units=km nphases=3 R1=0.472 R0=0.7328 X1=0.3738 X0=1.1363  BaseFreq=50
+New Linecode.3P_OH_Code2 units=km nphases=3 R1=0.689 R0=0.9498 X1=0.3712 X0=1.134 BaseFreq=50
+New Linecode.3P_OH_Code3 units=km nphases=3 R1=0.232 R0=0.4928 X1=0.3368 X0=1.0994 BaseFreq=50
+
+New Line.L48346_40_41 Units=km Length=0.045 bus1=41.1.2.3 bus2=40.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code3
+New Line.L48347_41_43 Units=km Length=0.042 bus1=43.1.2.3 bus2=41.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code3
+New Line.L48348_43_42 Units=km Length=0.024 bus1=42.1.2.3 bus2=43.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code3
+New Line.L48349_43_44 Units=km Length=0.039 bus1=44.1.2.3 bus2=43.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code0
+New Line.L48350_44_45 Units=km Length=0.042 bus1=45.1.2.3 bus2=44.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code0
+New Line.L48351_45_50 Units=km Length=0.08700000000000001 bus1=50.1.2.3 bus2=45.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code0
+New Line.L48352_46_47 Units=km Length=0.024 bus1=47.1.2.3 bus2=46.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code2
+New Line.L48353_47_49 Units=km Length=0.039 bus1=49.1.2.3 bus2=47.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code1
+New Line.L48354_48_49 Units=km Length=0.027 bus1=49.1.2.3 bus2=48.1.2.3 switch=n enabled=y phases=3 Linecode=3P_Code4
+New Line.L48355_49_50 Units=km Length=0.03 bus1=50.1.2.3 bus2=49.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code1
+New Line.L48356_50_52 Units=km Length=0.033 bus1=52.1.2.3 bus2=50.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code1
+New Line.L48357_51_52 Units=km Length=0.022 bus1=52.1.2.3 bus2=51.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code2
+New Line.L48358_52_54 Units=km Length=0.037 bus1=54.1.2.3 bus2=52.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code1
+New Line.L48359_53_54 Units=km Length=0.024 bus1=54.1.2.3 bus2=53.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code2
+New Line.L48360_54_59 Units=km Length=0.034 bus1=59.1.2.3 bus2=54.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code1
+New Line.L48361_55_57 Units=km Length=0.032 bus1=57.1.2.3 bus2=55.1.2.3 switch=n enabled=y phases=3 Linecode=3P_Code4
+New Line.L48362_56_58 Units=km Length=0.031 bus1=58.1.2.3 bus2=56.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code2
+New Line.L48363_58_57 Units=km Length=0.037 bus1=57.1.2.3 bus2=58.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code1
+New Line.L48364_59_58 Units=km Length=0.052000000000000005 bus1=58.1.2.3 bus2=59.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code1
+New Line.L48365_60_59 Units=km Length=0.038 bus1=59.1.2.3 bus2=60.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code0
+New Line.L48366_70_60 Units=km Length=0.034 bus1=60.1.2.3 bus2=70.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code0
+New Line.L48367_61_62 Units=km Length=0.078 bus1=62.1.2.3 bus2=61.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code0
+New Line.L48368_63_62 Units=km Length=0.042 bus1=62.1.2.3 bus2=63.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code0
+New Line.L48369_68_63 Units=km Length=0.032 bus1=63.1.2.3 bus2=68.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code0
+New Line.L48370_64_66 Units=km Length=0.027 bus1=66.1.2.3 bus2=64.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code0
+New Line.L48371_65_64 Units=km Length=0.025 bus1=64.1.2.3 bus2=65.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code0
+New Line.L48372_66_69 Units=km Length=0.035 bus1=69.1.2.3 bus2=66.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code0
+New Line.L48373_69_67 Units=km Length=0.047 bus1=67.1.2.3 bus2=69.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code0
+New Line.L48374_67_68 Units=km Length=0.044 bus1=68.1.2.3 bus2=67.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code0
+New Line.L48375_68_70 Units=km Length=0.023 bus1=70.1.2.3 bus2=68.1.2.3 switch=n enabled=y phases=3 Linecode=3P_OH_Code0
+
+New Transformer.1 phases=3 windings=2 %loadloss=0.0 wdg=1 conn=delta Kv=11.0 kva=150.0 bus=sourcebus_11000 wdg=2 conn=wye Kv=0.433 kva=150.0 bus=70 
+
+
+New Load.1 bus1=69.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-13.5 kvar=0.0 Phases=1
+New Load.2 bus1=65.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-7.654500000000001 kvar=0.0 Phases=1
+New Load.3 bus1=66.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-6.75 kvar=0.0 Phases=1
+New Load.4 bus1=66.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-5.103 kvar=0.0 Phases=1
+New Load.5 bus1=66.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-4.104 kvar=0.0 Phases=1
+New Load.6 bus1=69.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-2.0250000000000004 kvar=0.0 Phases=1
+New Load.7 bus1=61.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-8.019000000000002 kvar=0.0 Phases=1
+New Load.8 bus1=58.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-12.15 kvar=0.0 Phases=1
+New Load.9 bus1=58.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-6.48 kvar=0.0 Phases=1
+New Load.10 bus1=62.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-6.75 kvar=0.0 Phases=1
+New Load.11 bus1=67.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-2.916 kvar=0.0 Phases=1
+New Load.12 bus1=68.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-2.052 kvar=0.0 Phases=1
+New Load.13 bus1=68.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-5.4 kvar=0.0 Phases=1
+New Load.14 bus1=48.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-10.8 kvar=0.0 Phases=1
+New Load.15 bus1=45.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-3.7800000000000007 kvar=0.0 Phases=1
+New Load.16 bus1=45.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-2.916 kvar=0.0 Phases=1
+New Load.17 bus1=42.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-4.104 kvar=0.0 Phases=1
+New Load.18 bus1=41.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-3.1725 kvar=0.0 Phases=1
+New Load.19 bus1=46.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-4.104 kvar=0.0 Phases=1
+New Load.20 bus1=40.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-2.052 kvar=0.0 Phases=1
+New Load.21 bus1=40.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-2.565 kvar=0.0 Phases=1
+New Load.22 bus1=40.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=-6.885 kvar=0.0 Phases=1
+New Load.23 bus1=56.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.24 bus1=56.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.25 bus1=69.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.26 bus1=52.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.27 bus1=65.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.28 bus1=65.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.29 bus1=65.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.30 bus1=64.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.31 bus1=66.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.32 bus1=66.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.33 bus1=66.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.34 bus1=69.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.35 bus1=69.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.36 bus1=69.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.37 bus1=69.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.38 bus1=61.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.39 bus1=61.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.40 bus1=58.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.41 bus1=58.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.42 bus1=62.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.43 bus1=62.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.44 bus1=62.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.45 bus1=62.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.46 bus1=55.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.47 bus1=56.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.48 bus1=56.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.49 bus1=59.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.50 bus1=50.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.51 bus1=45.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.52 bus1=63.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.53 bus1=63.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.54 bus1=63.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.55 bus1=67.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.56 bus1=68.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.57 bus1=68.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.58 bus1=70.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.59 bus1=59.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.60 bus1=60.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.61 bus1=53.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.62 bus1=54.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.63 bus1=54.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.64 bus1=51.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.65 bus1=51.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.66 bus1=48.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.67 bus1=48.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.68 bus1=46.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.69 bus1=45.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.70 bus1=45.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.71 bus1=45.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.72 bus1=44.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.73 bus1=44.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.74 bus1=42.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.75 bus1=42.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.76 bus1=43.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.77 bus1=43.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.78 bus1=43.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.79 bus1=41.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.80 bus1=41.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.81 bus1=41.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.82 bus1=41.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.83 bus1=46.1 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.84 bus1=40.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.85 bus1=40.2 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.86 bus1=40.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+New Load.87 bus1=40.3 kV=0.24999266655910796 Vminpu=0.7 Vmaxpu=1.3 model=1 kW=1.6 kvar=0.0 Phases=1
+
+
+Set Voltagebases=[0.433, 11.0]
+
+Calcvoltagebases
+
+Solve

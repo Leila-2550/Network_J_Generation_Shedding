@@ -1,0 +1,11 @@
+legacy inverters are defined as negative loads
+for smart inverters we define the loads and pv systems as in pdf file
+Modeling high-peneteration PV for distribution interconnection studies:
+smart inverters function modeling in OpenDSS
+
+
+
+biam begam un dota function power flow inaro daram ke un maghadir ra midahad
+hala biam time ra tarif konam, vbase ro afzayesh bedam
+va az maghadire un dota func estefade konam faght
+load haro ham tarif konam
