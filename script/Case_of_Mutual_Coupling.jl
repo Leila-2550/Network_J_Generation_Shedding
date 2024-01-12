@@ -1,5 +1,4 @@
-## Network J_ EGS
-# Plots.default(show = true)
+## Network J_Mutual coupling/ Sensitivity of voltage and power
 import Pkg
 Pkg.add("Ipopt")
 using Pkg
@@ -13,13 +12,11 @@ using Distributions
 using StatsPlots
 using DataFrames
 const _ODSS = OpenDSSDirect
-# using Images
 
-data_path="/Users/raj055/Documents/Julia files-PSCC paper/Network_J_EGS/Network_J_EGS-main/data/NVLFT_J"
+data_path="/Users/raj055/Documents/Julia files/Network_J-main/data/NVLFT_J"
 cd(data_path) 
 dss_string = open(f->read(f, String), "Master.dss")
 dss(dss_string)
-
 
 function get_bus_voltage_snap()
     bus_dict = Dict() 
@@ -50,11 +47,6 @@ bus_dict = get_bus_voltage_snap()# give the voltages of all phases of all buses
 vma = [bus["vma"] for (i,bus) in bus_dict]
 vmb = [bus["vmb"] for (i,bus) in bus_dict]
 vmc = [bus["vmc"] for (i,bus) in bus_dict]
-# plot(vma.*230.94, label="vma")
-# plot!(vmb.*230.94, label="vma")
-# plot!(vmc.*230.94, label="vma")
-
-
 
 function get_branch_flows_snap()
     branch_dict = Dict()
@@ -78,10 +70,6 @@ function get_branch_flows_snap()
     return branch_dict
 end
 branch_dict = get_branch_flows_snap()
-
-# solver = JuMP.optimizer_with_attributes(Ipopt.Optimizer) # , "max_iter"=>100)
-# https://jump.dev/JuMP.jl/stable/tutorials/getting_started/getting_started_with_JuMP/#Getting-started-with-JuMP
-
 
 all_loads = _ODSS.Loads.AllNames()
 loads = Dict(ld => Any[] for ld in all_loads) 
@@ -120,19 +108,16 @@ load_name_set2index=Dict(name_set[k]=>k for k=1:length(name_set))
 bus_names = _ODSS.Circuit.AllBusNames()  #Rearranging the bus names from 1 t0 32
 number_of_buses = length(bus_names) 
 
-Vmag_Phase_a = zeros(number_of_buses,2001); #Phase voltages
+Vmag_Phase_a = zeros(number_of_buses,2001); # Phase voltages
 Vmag_Phase_b = zeros(number_of_buses,2001);
 Vmag_Phase_c = zeros(number_of_buses,2001);
 
 @show Vsources.AllNames()
 Vsources.Name("source")
 _ODSS.Basic.SetActiveClass("Load")
-# B1 = B[1:43, :]
-# B2 = B[44:end, :]
-# B2[:,2].=0
-# BB = [B1;B2] 
 
-## Defining random distributions for generation and demand
+
+## Defining distributions of generation and demand
 
 α=0.8; #low-pass filter coefficient
 
@@ -164,24 +149,15 @@ Pgeneration1 =-2*load_phaseA'* ones(1,2001) + -2.021 * load_phaseB' *ones(1,2001
 # Pgeneration1[18,:] = -9 * ones(1,2001);
 # Pgeneration1[80,:] = -9 * ones(1,2001);
 # Pgeneration1[79,:] = -9 * ones(1,2001);
+
 Qgeneration1 =  0.0 * ones(87,2001)
 # plot(Pgeneration1)
 
-#Pgen=reshape(Pgeneration1,(87,5501,4))
-# Pgen[:,:,1]
 
-Pdemand1 = 1.0* ones(87,2001) # when having load at all phases
+Pdemand1 = 2.1 * ones(87,2001) # when having load at all phases
 
-# Pdemand1= load_phaseA'*rand(LogNormal(μ2,σ2),1,5501 )
-# Pdemand1 = 2.01  * load_phaseA'* ones(1,5501)
-# Pdemand1 = 0.4883 * load_phaseA'* ones(1,5501)+ 0.913 * load_phaseB'* ones(1,5501) + 1 * load_phaseC'* ones(1,5501);##having equal loads at all phases
-
-# plot(Pdemand1)
-
-TT = 5500
-
-load_kW = zeros(87,2001);#Pdemand1
-PV_kW = zeros(87,2001);#Pgeneration1 
+load_kW = zeros(87,2001); #Pdemand1
+PV_kW = zeros(87,2001); #Inverters export
 net_load_kW = PV_kW + load_kW ;
 
 load_voltage_dss = zeros(87,2000); # voltage obtained by solving PF equation using _ODSS
